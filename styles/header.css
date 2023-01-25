@@ -4,10 +4,24 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    position: fixed;
+    max-width: inherit;
+    width: 95%;
 }
 
 .main-header__logo {
     height: 40px;
+}
+.main-header__logo:hover {
+    fill: var(--light-blue);
+    transition: fill .3s ease-in-out;
+}
+
+.main-header__logo-svg {
+    background-image: url("../assets/logo-white.svg");
+    fill: red;
 }
 
 .navigation__wrapper {
@@ -27,10 +41,12 @@
     cursor: default;
     transition: color .3s ease-in-out;
 }
-.navigation__item:hover > .navigation__dropdown {
-    display: unset;
+.navigation__item--wrapper:hover + .navigation__dropdown {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: all .3s ease-in-out;
 }
-.navigation__item:hover > .navigation__item--triangle {
+.navigation__item--wrapper:hover > .navigation__item--triangle {
     transform: rotate(180deg);
     margin-bottom: 6px;
     border-top-color: var(--light-blue);
@@ -41,12 +57,17 @@
     text-decoration: none;
     color: var(--white);
 }
+.navigation__item-link:hover {
+    color: var(--light-blue);
+    transition: color .3s ease-in-out;
+}
 
 .navigation__item--triangle {
     border: 5px solid transparent;
     border-top-color: var(--white);
-    margin-left: 7px;
-    margin-top: 5px;
+    position: absolute;
+    right: -18px;
+    bottom: 18px;
 }
 
 .navigation__dropdown {
@@ -56,8 +77,9 @@
     top: 50px;
     background-color: white !important;
     padding-left: 0px;
-    display: none;
+    opacity: 0;
     margin-top: 0px;
+    transform: translateY(20px);
 }
 .navigation__dropdown__item {
     padding-left: 30px;
@@ -122,4 +144,29 @@
 .btn--link {
     text-decoration: none;
     color: var(--white);
+}
+
+.hamburger-menu {
+    width: 25px;
+    height: 25px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.hamburger-line {
+    width: 100%;
+    height: 3px;
+    background-color: var(--white);
+}
+
+
+/* ----- MEDIA QUERIES ----- */
+@media screen and (max-width: 745px) {
+    .navigation__wrapper {
+        display: none;
+    }
+    .hamburger-menu {
+        display: flex;
+    }
 }
