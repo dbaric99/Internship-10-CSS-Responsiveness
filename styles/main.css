@@ -1,0 +1,15 @@
+@import url('./colors.css');
+
+body {
+    max-width: 1200px;
+    background-color: var(--dark-blue);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: Arial, Helvetica, serif;
+}
+
+header {
+    height: 80px;
+}

@@ -1,0 +1,61 @@
+@import url('./colors.css');
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-header__logo {
+    height: 40px;
+}
+
+.navigation__wrapper {
+    display: flex;
+    color: var(--white);
+    font-weight: bold;
+}
+
+.navigation__item {
+    display: flex;
+    margin-right: 40px;
+    align-items: center;
+}
+
+.navigation__item-lnk {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.navigation__item--triangle {
+    border: 5px solid transparent;
+    border-top-color: var(--white);
+    margin-left: 7px;
+    margin-top: 5px;
+}
+
+.navigation__dropdown {
+    position: absolute;
+}
+
+.navigation__item-btn {
+    width: 160px;
+    height: 50px;
+    background: var(--blue);
+    position: relative;
+}
+.navigation__item-btn > span:first-of-type {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translateY(-50%);
+}
+
+.btn--triangle {
+    border: 10px solid transparent;
+    border-left-color: var(--white);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 12%;
+}
