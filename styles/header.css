@@ -27,6 +27,9 @@
     cursor: default;
     transition: color .3s ease-in-out;
 }
+.navigation__item:hover > .navigation__dropdown {
+    display: unset;
+}
 .navigation__item:hover > .navigation__item--triangle {
     transform: rotate(180deg);
     margin-bottom: 6px;
@@ -34,7 +37,7 @@
     transition: border-top-color .3s ease-in-out;
 }
 
-.navigation__item-lnk {
+.navigation__item-link {
     text-decoration: none;
     color: var(--white);
 }
@@ -47,13 +50,47 @@
 }
 
 .navigation__dropdown {
+    width: 240px;
     position: absolute;
     list-style: none;
-    background-color: var(--white);
     top: 50px;
+    background-color: white !important;
+    padding-left: 0px;
+    display: none;
+    margin-top: 0px;
 }
-.navigation-dropdown__item > a {
+.navigation__dropdown__item {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+.add-spacings--top {
+    padding-top: 30px;
+}
+.add-spacings--bottom {
+    padding-bottom: 30px;
+}
+.navigation__dropdown__item--link {
     text-decoration: none;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--dark-blue);
+    font-weight: lighter;
+}
+.navigation__dropdown__item--link:hover {
+    color: var(--light-blue);
+    transition: color .3s ease-in-out;
+}
+
+.services-background {
+    background: url("../assets/shapes-services.png") no-repeat bottom right;
+}
+.company-background {
+    background: url("../assets/shapes-company.png") no-repeat bottom right;
+}
+.resources-background {
+    background: url("../assets/shapes-resources.png") no-repeat bottom right;
 }
 
 .navigation__item-btn {
