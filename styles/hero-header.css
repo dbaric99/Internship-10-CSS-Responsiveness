@@ -1,0 +1,40 @@
+@import url("./colors.css");
+
+.hero-header {
+    color: var(--white);
+    padding-top: 135px;
+    margin-left: 20px;
+}
+
+.hero-header__title {
+    font-size: 34px;
+    margin-bottom: 20px;
+    animation: slide-in__title 1s ease-in-out;
+}
+
+.hero-header__description {
+    font-size: 65px;
+    animation: slide-in__description 1s ease-in-out
+}
+
+@keyframes slide-in__title {
+    from {
+        transform: translateX(-30%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in__description {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
