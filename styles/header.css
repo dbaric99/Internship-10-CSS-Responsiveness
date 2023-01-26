@@ -113,38 +113,6 @@
     background: url("../assets/shapes-resources.png") no-repeat bottom right;
 }
 
-.navigation__item-btn {
-    width: 160px;
-    height: 50px;
-    background: var(--blue);
-    position: relative;
-    margin-right: 40px;
-}
-.navigation__item-btn > span:first-of-type {
-    position: absolute;
-    top: 50%;
-    left: 15%;
-    transform: translateY(-50%);
-}
-.navigation__item-btn:hover {
-    cursor: pointer;
-    background: var(--light-blue);
-    transition: background .3s ease-in-out;
-}
-
-.btn--triangle {
-    border: 10px solid transparent;
-    border-left-color: var(--white);
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 12%;
-}
-.btn--link {
-    text-decoration: none;
-    color: var(--white);
-}
-
 .hamburger-menu {
     width: 25px;
     height: 25px;
