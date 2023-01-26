@@ -12,6 +12,8 @@ body {
 
 header {
     height: 80px;
+    background: var(--dark-blue);
+    z-index: 1;
 }
 
 * {

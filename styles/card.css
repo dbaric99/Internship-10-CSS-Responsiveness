@@ -1,0 +1,44 @@
+@import url('./colors.css');
+
+.card__holder {
+    background-color: var(--white);
+    height: 600px;
+    max-width: inherit;
+    margin-right: 8%;
+    padding-top: 100px;
+    padding-left: 100px;
+    padding-right: 200px;
+    position: relative;
+}
+.card__holder::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: var(--light-blue);
+    height: 100%;
+    width: 106%;
+    z-index: -1;
+}
+
+.card__title {
+    font-size: 26px;
+}
+
+.card__description {
+    font-size: 42px;
+    line-height: 60px;
+}
+
+.card__background-image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+
+
+
