@@ -2,9 +2,16 @@
 
 .hero-header {
     color: var(--white);
-    padding-top: 135px;
+    /* padding-top: 135px; */
+    padding-top: 250px;
     margin-left: 20px;
-    margin-bottom: 145px;
+    height: 1000px;
+    margin-bottom: 50px;
+}
+
+.hero-header__wrapper {
+    position: sticky;
+    top: 110px;
 }
 
 .hero-header__title {

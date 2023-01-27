@@ -20,33 +20,6 @@ header {
     box-sizing: border-box;
 }
 
-h1, h2 {
+h1, h2, p {
     margin-top: 0px;
-}
-
-/* ----- BUTTON ----- */
-.primary-button__wrapper {
-    background-color: var(--blue);
-    display: inline-block;
-    padding: 16px 45px 16px 25px;
-    position: relative;
-}
-.primary-button__wrapper:hover {
-    cursor: pointer;
-    background: var(--light-blue);
-    transition: background .3s ease-in-out;
-}
-
-.primary-button__text {
-    text-decoration: none;
-    color: var(--white);
-    font-size: 16px;
-    font-weight: bold;
-}
-
-.primary-button__triangle {
-    border: 10px solid transparent;
-    border-left-color: var(--white);
-    position: absolute;
-    right: 10%;
 }

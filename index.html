@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="./styles/header.css" />
     <link rel="stylesheet" href="./styles/hero-header.css" />
     <link rel="stylesheet" href="./styles/card.css" />
+    <link rel="stylesheet" href="./styles/features.css" />
+    <link rel="stylesheet" href="./styles/buttons.css" />
     <title>Branding and Web Design Agency | Calgary | Tiller Digital</title>
   </head>
   <body>
@@ -145,25 +147,25 @@
           </ul>
         </span>
 
-        <span class="primary-button__wrapper">
-          <span>
-            <a
-              href="https://tillerdigital.com/book-a-call/"
-              class="primary-button__text"
-              >Book a Call</a
-            >
-          </span>
-          <span class="primary-button__triangle"></span>
+        <span class="primary-button__wrapper btn--default__wrapper">
+          <a
+            href="https://tillerdigital.com/book-a-call/"
+            class="primary-button__text btn--default__text"
+            >Book a Call</a
+          >
+          <span class="primary-button__triangle btn--default__triangle"></span>
         </span>
       </nav>
     </header>
 
     <section class="hero-header">
-      <h2 class="hero-header__title">Hi. We're Tiller.</h2>
-      <h1 class="hero-header__description">
-        The web and brand agency for ambitious software growth marketers and
-        product teams.
-      </h1>
+      <div class="hero-header__wrapper">
+        <h2 class="hero-header__title">Hi. We're Tiller.</h2>
+        <h1 class="hero-header__description">
+          The web and brand agency for ambitious software growth marketers and
+          product teams.
+        </h1>
+      </div>
     </section>
 
     <section class="card__holder">
@@ -172,15 +174,13 @@
         We're SaaS and tech web specialists that integrate brand, web, and
         product to drive conversion and product adoption.
       </h1>
-      <span class="primary-button__wrapper">
-        <span>
-          <a
-            href="https://tillerdigital.com/about/"
-            class="primary-button__text"
-            >Why Tiller</a
-          >
-        </span>
-        <span class="primary-button__triangle"></span>
+      <span class="primary-button__wrapper btn--default__wrapper">
+        <a
+          href="https://tillerdigital.com/about/"
+          class="primary-button__text btn--default__text"
+          >Why Tiller</a
+        >
+        <span class="primary-button__triangle btn--default__triangle"></span>
       </span>
       <img
         src="./assets/shapes-why-tiller.png"
@@ -190,36 +190,63 @@
     </section>
 
     <section class="features">
-      <aside>
-        <img src="./assets/shapes-features.png" alt="" />
+      <aside class="features__image__wrapper">
+        <img
+          src="./assets/shapes-features.png"
+          alt=""
+          class="features__image"
+        />
       </aside>
 
-      <div class="features__item">
-        <h2>Web</h2>
-        <p>
-          Translate features into value and move inbound web traffic from MQL to
-          SQL. Our websites are designed for persuasion and conversion.
-        </p>
-        <span></span>
-      </div>
+      <div class="features__items__wrapper">
+        <div class="features__item">
+          <h2 class="features__item__title">Web</h2>
+          <p class="features__item__content">
+            Translate features into value and move inbound web traffic from MQL
+            to SQL. Our websites are designed for persuasion and conversion.
+          </p>
+          <span class="primary-button__wrapper btn--white-blue__wrapper">
+            <a href="" class="primary-button__text btn--white-blue__text"
+              >Learn More</a
+            >
+            <span
+              class="primary-button__triangle btn--white-blue__triangle"
+            ></span>
+          </span>
+        </div>
 
-      <div class="features__item">
-        <h2>Brand</h2>
-        <p>
-          Stand out in a saturated software market. Our cohesive brand systems
-          help growth marketers spend less to be known more.
-        </p>
-        <span></span>
-      </div>
+        <div class="features__item">
+          <h2 class="features__item__title">Brand</h2>
+          <p class="features__item__content">
+            Stand out in a saturated software market. Our cohesive brand systems
+            help growth marketers spend less to be known more.
+          </p>
+          <span class="primary-button__wrapper btn--white-blue__wrapper">
+            <a href="" class="primary-button__text btn--white-blue__text"
+              >Learn More</a
+            >
+            <span
+              class="primary-button__triangle btn--white-blue__triangle"
+            ></span>
+          </span>
+        </div>
 
-      <div class="features__item">
-        <h2>Product</h2>
-        <p>
-          Maximize the potential of back-end functionality with appealing and
-          intuitive design. Our UX/UI design helps product managers increase
-          users, conversions, retention, and revenue.
-        </p>
-        <span></span>
+        <div class="features__item">
+          <h2 class="features__item__title">Product</h2>
+          <p class="features__item__content">
+            Maximize the potential of back-end functionality with appealing and
+            intuitive design. Our UX/UI design helps product managers increase
+            users, conversions, retention, and revenue.
+          </p>
+          <span class="primary-button__wrapper btn--white-blue__wrapper">
+            <a href="" class="primary-button__text btn--white-blue__text"
+              >Learn More</a
+            >
+            <span
+              class="primary-button__triangle btn--white-blue__triangle"
+            ></span>
+          </span>
+        </div>
       </div>
     </section>
   </body>

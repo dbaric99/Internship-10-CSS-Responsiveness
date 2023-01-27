@@ -1,0 +1,60 @@
+.primary-button__wrapper {
+    display: inline-block;
+    padding: 16px 45px 16px 25px;
+    position: relative;
+}
+.primary-button__wrapper:hover {
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.primary-button__text {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.primary-button__triangle {
+    border: 10px solid transparent;
+    position: absolute;
+    right: 10%;
+}
+
+/* ----- THEMES ----- */
+.btn--default__wrapper {
+    background-color: var(--blue);
+    border: 2px solid var(--blue);
+}
+.btn--default__wrapper:hover {
+    background: var(--light-blue);
+    border-color: var(--light-blue);
+}
+.btn--default__text {
+    color: var(--white);
+}
+.btn--default__triangle {
+    border-left-color: var(--white);
+}
+
+
+
+.btn--white-blue__wrapper {
+    border: 2px solid var(--white);
+}
+.btn--white-blue__wrapper:hover {
+    background-color: var(--white);
+}
+.btn--white-blue__wrapper:hover > .btn--white-blue__text {
+    color: var(--blue);
+    transition: color .3s ease-in-out;
+}
+.btn--white-blue__wrapper:hover > .btn--white-blue__triangle {
+    border-left-color: var(--blue);
+    transition: all .3s ease-in-out;
+}
+.btn--white-blue__text {
+    color: var(--white);
+}
+.btn--white-blue__triangle {
+    border-left-color: var(--white);
+}

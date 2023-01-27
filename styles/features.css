@@ -1,0 +1,39 @@
+@import url('./colors.css');
+
+.features {
+    display: flex;
+}
+
+.features__items__wrapper {
+    display: flex;
+    flex-direction: column;
+    color: var(--white);
+    width: 55%;
+}
+
+.features__item {
+    padding: 40px;
+}
+
+.features__item__title {
+    font-size: 42px;
+    line-height: 60px;
+    margin-bottom: 20px;
+}
+
+.features__item__content {
+    font-size: 26px;
+    line-height: 40px;
+    margin-bottom: 45px;
+}
+
+.features__image__wrapper {
+    display: inline-block;
+    width: 45%;
+}
+
+.features__image {
+    width: 100%;
+    position: sticky;
+    top: 80px;
+}
