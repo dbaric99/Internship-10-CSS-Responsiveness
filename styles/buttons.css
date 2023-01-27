@@ -58,3 +58,21 @@
 .btn--white-blue__triangle {
     border-left-color: var(--white);
 }
+
+
+
+.btn--transparent__text {
+    color: var(--blue);
+}
+.btn--transparent__text:hover {
+    cursor: pointer;
+    color: var(--light-blue);
+    transition: color .3s ease-in-out;
+}
+.btn--transparent__triangle {
+    border-left-color: var(--blue);
+}
+.btn--transparent__text:hover + .btn--transparent__triangle {
+    border-left-color: var(--light-blue);
+    transition: all .3s ease-in-out;
+}

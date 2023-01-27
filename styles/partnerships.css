@@ -1,0 +1,82 @@
+@import url('./colors.css');
+
+.partnerships {
+    background-color: var(--white);
+    width: 100vw;
+    position: absolute;
+    left: 0;
+}
+
+.partnerships__head {
+    padding-top: 150px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 8%;
+}
+
+.partnerships__title {
+    font-size: 50px;
+    line-height: 70px;
+    margin-left: 8%;
+}
+
+.partnership__cards__wrapper {
+    display: flex;
+    width: 100vw;
+    white-space: nowrap;
+    margin-left: 8%;
+}
+
+.partnership__card:not(:last-of-type) {
+    margin-right: 70px;
+}
+.partnership__card:is(:last-of-type) {
+    padding-right: 10%;
+}
+
+.partnership__card__image__wrapper {
+    margin-bottom: 20px;
+}
+
+.partnership__card__image-holder {
+    height: 480px;
+    width: 447.9px;
+    background: url('../assets/partnernship.png') no-repeat;
+    background-size: contain;
+    position:relative
+}
+.partnership__card__image-holder:hover {
+    background: var(--light-blue);
+    background:
+    linear-gradient(to bottom, var(--light-blue), transparent),
+    url("../assets/noise.svg");
+    transition: background .3s ease-in-out;
+}
+
+.partnership__card__image-holder:hover > .primary-button__wrapper {
+    display: inline-block;
+}
+
+.partnership__card__description {
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.partnership__card__link {
+    text-decoration: none;
+    color: inherit;
+}
+.partnership__card__link:hover {
+    color: var(--light-blue);
+    transition: color .3s ease-in-out;
+}
+
+.center-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+}

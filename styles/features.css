@@ -2,6 +2,7 @@
 
 .features {
     display: flex;
+    margin-bottom: 200px;
 }
 
 .features__items__wrapper {
