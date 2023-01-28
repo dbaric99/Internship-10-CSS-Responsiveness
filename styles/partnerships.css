@@ -80,3 +80,7 @@
     transform: translateX(-50%);
     display: none;
 }
+
+.position--end {
+    align-self: flex-end;
+}

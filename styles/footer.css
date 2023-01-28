@@ -1,0 +1,101 @@
+@import url('./colors.css');
+
+.footer {
+    background-color: var(--white);
+    transform: translateY(270%);
+}
+
+.footer__main__wrapper {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.footer__content__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footer-logo {
+    
+}
+
+.footer__logo__image {
+    margin-top: 60px;
+    margin-right: 70px;
+}
+
+.footer__links {
+    display: flex;
+    margin-top: 60px;
+    width: 50%;
+}
+
+.footer__link__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+}
+.footer__link__wrapper:not(:last-of-type) {
+    margin-right: 40px;
+}
+
+.footer__link__title {
+    border-bottom: 1px solid var(--light-grey);
+    padding-bottom: 17px;
+    margin-bottom: 17px;
+}
+
+.footer__link__item {
+    font-size: 14px;
+    line-height: 18px;
+    text-decoration: none;
+    color: inherit;
+    margin-bottom: 15px;
+}
+.footer__link__item:hover {
+    color: var(--light-blue);
+    transition: color .3s ease-in-out;
+}
+
+.footer__badges {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+}
+
+.footer__badge__image {
+    margin-bottom: 20px;
+}
+
+.footer__contact__wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    width: 22%;
+}
+
+.footer__business {
+
+}
+
+.footer__business__title {
+    
+}
+
+.footer__title {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: bold;
+}
+
+.footer__contact__text__link, .footer__contact__text__link--disabled {
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+    color: inherit;
+}
+.footer__contact__text__link:hover {
+    color: var(--light-blue);
+    transition: color .3s ease-in-out;
+}
