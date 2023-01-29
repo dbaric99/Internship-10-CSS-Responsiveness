@@ -1,5 +1,3 @@
-@import url('./colors.css');
-
 .main-header {
     display: flex;
     justify-content: space-between;
@@ -7,18 +5,8 @@
     position: fixed;
     max-width: inherit;
     width: 100%;
-}
-
-.main-header::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -10%;
-    width: 100vw;
-    height: 80px;
-    background-color: var(--dark-blue);
-    z-index: -1;
-    overflow: hidden;
+    box-shadow: 0 0 0 100vmax var(--dark-blue);
+    clip-path: inset(0 -100vmax); 
 }
 
 .main-header__logo {
@@ -54,6 +42,7 @@
 
 .navigation__item:hover > .navigation__dropdown {
     pointer-events: all;
+    visibility: visible;
     z-index: 2;
     opacity: 1;
     transform: translateY(0px);
@@ -85,6 +74,7 @@
 
 .navigation__dropdown {
     pointer-events: none;
+    visibility: hidden;
     width: 240px;
     position: absolute;
     list-style: none;
@@ -98,6 +88,7 @@
 }
 .navigation__dropdown:hover {
     pointer-events: all;
+    visibility: visible;
     opacity: 1;
 }
 .navigation__dropdown__item {
@@ -159,7 +150,7 @@
         display: flex;
     }
     body {
-        margin-left: 20px;
-        margin-right: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }

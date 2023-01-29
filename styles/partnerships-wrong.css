@@ -1,8 +1,17 @@
+
+
+
+
+
+
+
+
+
 .partnerships {
     background: var(--white);
-    
+
     box-shadow: 0 0 0 100vmax var(--white);
-    clip-path: inset(0 -100vmax);
+    clip-path: inset(0 -100vmax); 
 }
 
 .partnerships__head {
@@ -41,7 +50,6 @@
     width: 448px;
     background: url('../assets/partnernship.png') no-repeat;
     background-size: contain;
-    position: relative;
 }
 .partnership__card__image-holder:hover {
     background: var(--light-blue);
@@ -50,21 +58,6 @@
 .partnership__card__image-holder:hover > .primary-button__wrapper {
     display: inline-block;
 }
-
-.partnership__card__description {
-    font-size: 20px;
-    line-height: 40px;
-}
-
-.partnership__card__link {
-    text-decoration: none;
-    color: inherit;
-}
-.partnership__card__link:hover {
-    color: var(--light-blue);
-    transition: color .3s ease-in-out;
-}
-
 
 .center-btn {
     position: absolute;

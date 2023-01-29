@@ -1,5 +1,3 @@
-@import url('./colors.css');
-
 body {
     max-width: 1200px;
     background-color: var(--dark-blue);
@@ -23,4 +21,14 @@ header {
 
 h1, h2, h4, h6, p {
     margin-top: 0px;
+}
+
+.layout-spacing {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.disable-overflow {
+    overflow-x: hidden;
 }

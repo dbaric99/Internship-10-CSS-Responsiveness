@@ -1,9 +1,7 @@
-@import url('./colors.css');
-
 .card__holder {
     background-color: var(--white);
     height: 600px;
-    max-width: inherit;
+    max-width: 94%;
     margin-right: 8%;
     padding-top: 100px;
     padding-left: 100px;
