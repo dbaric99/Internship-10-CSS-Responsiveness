@@ -2,12 +2,15 @@
 
 .footer {
     background-color: var(--white);
-    transform: translateY(270%);
+    transform: translateY(230%);
+    display: flex;
+    flex-direction: column;
 }
 
 .footer__main__wrapper {
     display: flex;
     justify-content: flex-start;
+    margin-bottom: 40px;
 }
 
 .footer__content__wrapper {
@@ -68,6 +71,10 @@
     margin-bottom: 20px;
 }
 
+.footer__contact {
+    margin-bottom: 40px;
+}
+
 .footer__contact__wrapper {
     display: flex;
     flex-direction: column;
@@ -80,7 +87,11 @@
 }
 
 .footer__business__title {
-    
+    margin-bottom: 15px;
+}
+
+.footer__contact__title {
+    margin-bottom: 15px;
 }
 
 .footer__title {
@@ -94,8 +105,35 @@
     line-height: 24px;
     text-decoration: none;
     color: inherit;
+    margin-bottom: 15px;
 }
 .footer__contact__text__link:hover {
     color: var(--light-blue);
     transition: color .3s ease-in-out;
+}
+
+.footer__social-icons__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__social-icons__image {
+    height: 25px;
+    filter: grayscale(1);
+}
+.footer__social-icons__image:hover {
+    filter: grayscale(0);
+    transition: all .3s ease-in-out;
+}
+
+.footer__policies {
+    display: flex;
+    border-top: 1px solid var(--light-grey);
+    margin-bottom: 40px;
+}
+
+.footer__policies__text {
+    font-size: 12px;
+    margin-right: 40px;
+    padding-top: 20px;
 }
