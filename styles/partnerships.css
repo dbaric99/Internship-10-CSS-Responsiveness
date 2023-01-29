@@ -26,6 +26,7 @@
     width: 100vw;
     white-space: nowrap;
     margin-left: 8%;
+    overflow-x: scroll;
 }
 
 .partnership__card:not(:last-of-type) {
