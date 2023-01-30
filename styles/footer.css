@@ -83,6 +83,7 @@
     flex-direction: column;
     margin-top: 60px;
     width: 22%;
+    min-width: 200px;
 }
 
 .footer__business {
@@ -140,3 +141,45 @@
     margin-right: 40px;
     padding-top: 20px;
 }
+
+/* ----- MEDIA QUERIES ----- */
+@media screen and (max-width: 1210px) {
+    .footer__badges {
+        display: none;
+    }
+    .footer__content__wrapper {
+        justify-content: flex-start;
+    }
+    .footer__contact__wrapper {
+        margin-left: 20px;
+    }
+} 
+
+@media screen and (max-width: 1150px) {
+    .footer__badges {
+        display: none;
+    }
+    .footer__content__wrapper {
+        justify-content: space-between;
+    }
+    .footer__contact__wrapper {
+        margin-left: 20px;
+    }
+    .btn--blue-white__triangle {
+        right: 5%;
+    }
+} 
+
+@media screen and (max-width: 750px) {
+    .footer__content__wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer__main__wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer__contact__wrapper {
+        width: 50%;
+    }
+} 

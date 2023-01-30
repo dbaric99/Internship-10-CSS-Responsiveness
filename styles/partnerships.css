@@ -24,8 +24,8 @@
 
 .partnership__cards--overflow {
     overflow-x: auto;
-    margin-left: -10%;
-    margin-right: -10%;
+    margin-left: -8%;
+    margin-right: -8%;
 }
 
 .partnership__card:not(:last-child) {
@@ -78,3 +78,16 @@
 .position--end {
     align-self: flex-end;
 }
+
+/* ----- MEDIA QUERIES ----- */
+@media screen and (max-width: 480px) {
+    .partnership__cards__wrapper {
+        display: unset;
+    }
+    .partnership__cards--overflow {
+        margin-left: 0%;
+    }
+    .partnership__card {
+        transform: scale(0.8);
+    }
+} 

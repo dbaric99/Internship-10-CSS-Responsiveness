@@ -32,3 +32,10 @@ h1, h2, h4, h6, p {
 .disable-overflow {
     overflow-x: hidden;
 }
+
+@media screen and (max-width: 480px) {
+    body {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
